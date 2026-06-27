@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ORBS - Blog</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="top-alert"><i class="fa-solid fa-truck-fast"></i> Free delivery on orders over $59 — Freshness guaranteed.</div>
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="logo"><img src="assets/icons/logo-orbs.svg" alt="ORBS Logo"></a>
+      <nav class="nav-links"><a href="index.html" class="">Home</a><a href="products.html" class="">Product</a><a href="blogs.html" class="active">Blogs</a><a href="contact.html" class="">Contact us</a></nav>
+      <div class="nav-actions">
+        <button class="icon-btn search-toggle" type="button" aria-label="Open Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="icon-btn cart-toggle" type="button" aria-label="Open Cart"><i class="fa-solid fa-bag-shopping"></i><span class="cart-count">0</span></button>
+        <a href="login.html" class="btn btn-outline">Log-in</a>
+        <a href="signup.html" class="btn btn-light">Sign-up</a>
+      </div>
+      <button class="menu-toggle" aria-label="Open Menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+
+    <div class="search-panel" aria-hidden="true">
+      <div class="container search-panel-inner">
+        <div class="search-shell">
+          <div class="search-bar-row">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input class="search-global-input" type="search" placeholder="Search products, articles and pages...">
+            <button class="search-close" type="button" aria-label="Close Search"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <div class="search-hints">
+            <button class="search-chip" type="button" data-query="Red Apples">Red Apples</button>
+            <button class="search-chip" type="button" data-query="Green Apples">Green Apples</button>
+            <button class="search-chip" type="button" data-query="Gift Box">Gift Box</button>
+            <button class="search-chip" type="button" data-query="Recipes">Recipes</button>
+            <button class="search-chip" type="button" data-query="Delivery">Delivery</button>
+          </div>
+          <div class="search-results"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cart-panel" aria-hidden="true">
+      <div class="container cart-panel-inner">
+        <div class="mini-cart-shell">
+          <div class="mini-cart-head">
+            <div>
+              <span class="search-meta">Shopping Cart</span>
+              <h3>Your fresh picks</h3>
+            </div>
+            <button class="cart-close" type="button" aria-label="Close Cart"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <div class="mini-cart-list">
+            <div class="mini-cart-item">
+              <img src="assets/images/apple-red-delicious.jpg" alt="Red Delicious">
+              <div>
+                <h4>Red Delicious</h4>
+                <p>1 kg × $2.50</p>
+              </div>
+              <strong>$2.50</strong>
+            </div>
+            <div class="mini-cart-item">
+              <img src="assets/images/apple-fuji.jpg" alt="Fuji Apple">
+              <div>
+                <h4>Fuji Apple</h4>
+                <p>1 kg × $2.80</p>
+              </div>
+              <strong>$2.80</strong>
+            </div>
+          </div>
+          <div class="mini-cart-total">
+            <span>Subtotal</span>
+            <strong>$5.30</strong>
+          </div>
+          <div class="mini-cart-actions">
+            <a class="btn btn-soft" href="cart.html">View Cart</a>
+            <a class="btn btn-primary" href="cart.html">Checkout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+<main class="page-body">
+
+  <section class="page-hero blog"><div class="container"><div class="breadcrumbs"><a href="index.html">Home</a><span>/</span><span>Blogs</span></div><h1>Our Blog</h1><p>Tips, stories and insights from the orchard to your kitchen.</p></div></section>
+  <section class="section"><div class="container">
+    <div class="toolbar">
+      <div class="filter-tags blog-filter">
+        <button class="tag active" type="button" data-filter="all">All Posts</button>
+        <button class="tag" type="button" data-filter="farming">Farming Tips</button>
+        <button class="tag" type="button" data-filter="health">Health & Nutrition</button>
+        <button class="tag" type="button" data-filter="recipes">Recipes</button>
+        <button class="tag" type="button" data-filter="news">News</button>
+      </div>
+      <input class="search-input blog-search" type="search" placeholder="Search articles...">
+    </div>
+    <div class="blog-grid">
+          <article class="blog-card" data-category="health">
+            <a href="blog-details.html" class="blog-img"><img src="assets/images/blog-benefits.jpg" alt="The Benefits of Eating Apples Daily"></a>
+            <div class="blog-content">
+              <div class="meta"><span><i class="fa-regular fa-calendar"></i> June 8, 2025</span><span><i class="fa-solid fa-leaf"></i> Health & Nutrition</span></div>
+              <h3><a href="blog-details.html">The Benefits of Eating Apples Daily</a></h3>
+              <p>Apples are packed with fiber, hydration and antioxidants that support a healthy routine.</p>
+              <a class="read-more" href="blog-details.html">Read More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="blog-card" data-category="farming">
+            <a href="blog-details.html" class="blog-img"><img src="assets/images/blog-grow.jpg" alt="How We Grow Premium Apples"></a>
+            <div class="blog-content">
+              <div class="meta"><span><i class="fa-regular fa-calendar"></i> June 5, 2025</span><span><i class="fa-solid fa-leaf"></i> Farming Tips</span></div>
+              <h3><a href="blog-details.html">How We Grow Premium Apples</a></h3>
+              <p>A look into our sustainable farming practices that ensure the best quality apples.</p>
+              <a class="read-more" href="blog-details.html">Read More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="blog-card" data-category="recipes">
+            <a href="blog-details.html" class="blog-img"><img src="assets/images/blog-recipes.jpg" alt="Apple Recipes You’ll Love"></a>
+            <div class="blog-content">
+              <div class="meta"><span><i class="fa-regular fa-calendar"></i> June 2, 2025</span><span><i class="fa-solid fa-leaf"></i> Recipes</span></div>
+              <h3><a href="blog-details.html">Apple Recipes You’ll Love</a></h3>
+              <p>Delicious and simple apple recipes for every occasion, from breakfast to dessert.</p>
+              <a class="read-more" href="blog-details.html">Read More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="blog-card" data-category="news">
+            <a href="blog-details.html" class="blog-img"><img src="assets/images/blog-freshness.jpg" alt="Why Freshness Matters"></a>
+            <div class="blog-content">
+              <div class="meta"><span><i class="fa-regular fa-calendar"></i> May 28, 2025</span><span><i class="fa-solid fa-leaf"></i> News</span></div>
+              <h3><a href="blog-details.html">Why Freshness Matters</a></h3>
+              <p>The importance of farm-fresh produce and how we deliver it to you.</p>
+              <a class="read-more" href="blog-details.html">Read More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="blog-card" data-category="recipes">
+            <a href="blog-details.html" class="blog-img"><img src="assets/images/blog-baking.jpg" alt="Best Apples for Baking"></a>
+            <div class="blog-content">
+              <div class="meta"><span><i class="fa-regular fa-calendar"></i> May 25, 2025</span><span><i class="fa-solid fa-leaf"></i> Recipes</span></div>
+              <h3><a href="blog-details.html">Best Apples for Baking</a></h3>
+              <p>Discover the best apple varieties for your favorite baked goods.</p>
+              <a class="read-more" href="blog-details.html">Read More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="blog-card" data-category="farming">
+            <a href="blog-details.html" class="blog-img"><img src="assets/images/blog-farmers.jpg" alt="Supporting Local Farmers"></a>
+            <div class="blog-content">
+              <div class="meta"><span><i class="fa-regular fa-calendar"></i> May 20, 2025</span><span><i class="fa-solid fa-leaf"></i> Sustainability</span></div>
+              <h3><a href="blog-details.html">Supporting Local Farmers</a></h3>
+              <p>How your purchase supports the local farming community.</p>
+              <a class="read-more" href="blog-details.html">Read More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article></div>
+  </div></section>
+  <section class="section-sm"><div class="container newsletter-box"><div class="content"><h2>Subscribe to Our Newsletter</h2><p>Get the latest updates, offers and fresh harvest news.</p><form class="newsletter-form"><input type="email" placeholder="Enter your email" required><button>Subscribe</button></form></div></div></section>
+
+</main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <img class="footer-logo" src="assets/icons/logo-orbs.svg" alt="ORBS Logo">
+          <p>Bringing nature’s best to your doorstep with premium apples, fresh fruits and quality you can trust every day.</p>
+          <div class="social-links">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <ul><li><a href="index.html">Home</a></li><li><a href="products.html">Product</a></li><li><a href="blogs.html">Blogs</a></li><li><a href="contact.html">Contact us</a></li></ul>
+        </div>
+        <div>
+          <h3>Customer Service</h3>
+          <ul><li><a href="#">FAQs</a></li><li><a href="#">Shipping & Delivery</a></li><li><a href="#">Returns</a></li><li><a href="#">Privacy Policy</a></li></ul>
+        </div>
+        <div>
+          <h3>Contact Us</h3>
+          <ul><li><a href="mailto:info@orbs.com"><i class="fa-regular fa-envelope"></i> info@orbs.com</a></li><li><a href="tel:+1234567890"><i class="fa-solid fa-phone"></i> +123 456 7890</a></li><li><a href="#"><i class="fa-solid fa-location-dot"></i> Orchard Valley, USA</a></li></ul>
+        </div>
+      </div>
+      <div class="copyright">© 2025 ORBS. All rights reserved. Static front-end design only.</div>
+    </div>
+  </footer>
+  <button class="back-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+  <div class="toast">Done</div>
+<script src="js/main.js"></script>
+</body>
+</html>

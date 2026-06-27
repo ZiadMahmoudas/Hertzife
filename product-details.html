@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ORBS - Red Delicious Apples</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="top-alert"><i class="fa-solid fa-truck-fast"></i> Free delivery on orders over $59 — Freshness guaranteed.</div>
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="logo"><img src="assets/icons/logo-orbs.svg" alt="ORBS Logo"></a>
+      <nav class="nav-links"><a href="index.html" class="">Home</a><a href="products.html" class="active">Product</a><a href="blogs.html" class="">Blogs</a><a href="contact.html" class="">Contact us</a></nav>
+      <div class="nav-actions">
+        <button class="icon-btn search-toggle" type="button" aria-label="Open Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="icon-btn cart-toggle" type="button" aria-label="Open Cart"><i class="fa-solid fa-bag-shopping"></i><span class="cart-count">0</span></button>
+        <a href="login.html" class="btn btn-outline">Log-in</a>
+        <a href="signup.html" class="btn btn-light">Sign-up</a>
+      </div>
+      <button class="menu-toggle" aria-label="Open Menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+
+    <div class="search-panel" aria-hidden="true">
+      <div class="container search-panel-inner">
+        <div class="search-shell">
+          <div class="search-bar-row">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input class="search-global-input" type="search" placeholder="Search products, articles and pages...">
+            <button class="search-close" type="button" aria-label="Close Search"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <div class="search-hints">
+            <button class="search-chip" type="button" data-query="Red Apples">Red Apples</button>
+            <button class="search-chip" type="button" data-query="Green Apples">Green Apples</button>
+            <button class="search-chip" type="button" data-query="Gift Box">Gift Box</button>
+            <button class="search-chip" type="button" data-query="Recipes">Recipes</button>
+            <button class="search-chip" type="button" data-query="Delivery">Delivery</button>
+          </div>
+          <div class="search-results"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cart-panel" aria-hidden="true">
+      <div class="container cart-panel-inner">
+        <div class="mini-cart-shell">
+          <div class="mini-cart-head">
+            <div>
+              <span class="search-meta">Shopping Cart</span>
+              <h3>Your fresh picks</h3>
+            </div>
+            <button class="cart-close" type="button" aria-label="Close Cart"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <div class="mini-cart-list">
+            <div class="mini-cart-item">
+              <img src="assets/images/apple-red-delicious.jpg" alt="Red Delicious">
+              <div>
+                <h4>Red Delicious</h4>
+                <p>1 kg × $2.50</p>
+              </div>
+              <strong>$2.50</strong>
+            </div>
+            <div class="mini-cart-item">
+              <img src="assets/images/apple-fuji.jpg" alt="Fuji Apple">
+              <div>
+                <h4>Fuji Apple</h4>
+                <p>1 kg × $2.80</p>
+              </div>
+              <strong>$2.80</strong>
+            </div>
+          </div>
+          <div class="mini-cart-total">
+            <span>Subtotal</span>
+            <strong>$5.30</strong>
+          </div>
+          <div class="mini-cart-actions">
+            <a class="btn btn-soft" href="cart.html">View Cart</a>
+            <a class="btn btn-primary" href="cart.html">Checkout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+<main class="page-body">
+
+  <section class="section">
+    <div class="container">
+      <div class="breadcrumbs" style="color:var(--muted);margin-bottom:22px"><a href="index.html" style="color:var(--green)">Home</a><span>/</span><a href="products.html" style="color:var(--green)">Product</a><span>/</span><span>Red Delicious</span></div>
+      <div class="details-layout">
+        <div class="product-gallery">
+          <div class="main-photo"><img src="assets/images/apple-red-delicious.jpg" alt="Red Delicious"></div>
+          <div class="thumbs">
+            <button class="active"><img src="assets/images/apple-red-delicious.jpg" alt="thumb"></button><button><img src="assets/images/apple-fuji.jpg" alt="thumb"></button><button><img src="assets/images/apple-gala.jpg" alt="thumb"></button><button><img src="assets/images/premium-quality.jpg" alt="thumb"></button>
+          </div>
+        </div>
+        <div class="details-panel">
+          <span class="kicker"><i class="fa-solid fa-certificate"></i> Best Seller</span>
+          <h1>Red Delicious Apples</h1>
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i> <span class="muted">(120 Reviews)</span></div>
+          <div class="detail-price">$2.50 <small>/ kg</small></div>
+          <p class="muted">Crisp, sweet and juicy apples with a rich flavor. Perfect for snacking, salads and desserts.</p>
+          <ul class="check-list"><li><i class="fa-solid fa-circle-check"></i> Handpicked from the best orchards</li><li><i class="fa-solid fa-circle-check"></i> 100% natural and fresh</li><li><i class="fa-solid fa-circle-check"></i> Rich in vitamins and fiber</li><li><i class="fa-solid fa-circle-check"></i> Secure payment and easy returns</li></ul>
+          <div class="qty-row"><div class="qty"><button data-qty="minus">−</button><input value="1" aria-label="Quantity"><button data-qty="plus">+</button></div><button class="btn btn-primary add-cart"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button><a class="btn btn-soft" href="cart.html">Buy Now</a></div>
+        </div>
+      </div>
+      <div class="tabs">
+        <div class="tab-buttons"><button class="tab-btn active" data-tab="desc">Description</button><button class="tab-btn" data-tab="nutrition">Nutrition</button><button class="tab-btn" data-tab="reviews">Reviews</button><button class="tab-btn" data-tab="faq">FAQs</button></div>
+        <div class="tab-content active" data-content="desc">Red Delicious apples are known for their deep red color, sweet flavor and crisp texture. They are ideal for everyday snacking and fresh salads.</div>
+        <div class="tab-content" data-content="nutrition">Apples are a source of fiber, hydration and essential nutrients. One medium apple can support a balanced daily routine.</div>
+        <div class="tab-content" data-content="reviews">Customers love the freshness, crunch and clean packaging of our apples.</div>
+        <div class="tab-content" data-content="faq">Delivery normally takes 1–3 business days depending on your location. Refunds are available for damaged items.</div>
+      </div>
+    </div>
+  </section>
+  <section class="section products"><div class="container"><div class="section-title"><h2>You May Also Like</h2><div class="title-line"></div></div><div class="products-grid">
+          <article class="product-card">
+            <span class="product-badge">New</span>
+            <a href="product-details.html" class="product-img"><img src="assets/images/apple-fuji.jpg" alt="Fuji Apple"></a>
+            <h3><a href="product-details.html">Fuji Apple</a></h3>
+            <p class="desc">Sweet, crunchy and full of flavor.</p>
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+            <div class="price-row"><div class="price">$2.80 <small>/ kg</small></div><button class="add-cart" aria-label="Add to cart"><i class="fa-solid fa-cart-plus"></i></button></div>
+          </article>
+
+          <article class="product-card">
+            
+            <a href="product-details.html" class="product-img"><img src="assets/images/apple-granny.jpg" alt="Granny Smith"></a>
+            <h3><a href="product-details.html">Granny Smith</a></h3>
+            <p class="desc">Tangy, refreshing and bright green.</p>
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+            <div class="price-row"><div class="price">$2.60 <small>/ kg</small></div><button class="add-cart" aria-label="Add to cart"><i class="fa-solid fa-cart-plus"></i></button></div>
+          </article>
+
+          <article class="product-card">
+            
+            <a href="product-details.html" class="product-img"><img src="assets/images/apple-gala.jpg" alt="Gala Apple"></a>
+            <h3><a href="product-details.html">Gala Apple</a></h3>
+            <p class="desc">Mild, sweet and aromatic.</p>
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+            <div class="price-row"><div class="price">$2.40 <small>/ kg</small></div><button class="add-cart" aria-label="Add to cart"><i class="fa-solid fa-cart-plus"></i></button></div>
+          </article>
+
+          <article class="product-card">
+            <span class="product-badge gold">Premium</span>
+            <a href="product-details.html" class="product-img"><img src="assets/images/apple-honeycrisp.jpg" alt="Honeycrisp"></a>
+            <h3><a href="product-details.html">Honeycrisp</a></h3>
+            <p class="desc">Juicy, crisp and honey-sweet.</p>
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+            <div class="price-row"><div class="price">$3.20 <small>/ kg</small></div><button class="add-cart" aria-label="Add to cart"><i class="fa-solid fa-cart-plus"></i></button></div>
+          </article></div></div></section>
+
+</main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <img class="footer-logo" src="assets/icons/logo-orbs.svg" alt="ORBS Logo">
+          <p>Bringing nature’s best to your doorstep with premium apples, fresh fruits and quality you can trust every day.</p>
+          <div class="social-links">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <ul><li><a href="index.html">Home</a></li><li><a href="products.html">Product</a></li><li><a href="blogs.html">Blogs</a></li><li><a href="contact.html">Contact us</a></li></ul>
+        </div>
+        <div>
+          <h3>Customer Service</h3>
+          <ul><li><a href="#">FAQs</a></li><li><a href="#">Shipping & Delivery</a></li><li><a href="#">Returns</a></li><li><a href="#">Privacy Policy</a></li></ul>
+        </div>
+        <div>
+          <h3>Contact Us</h3>
+          <ul><li><a href="mailto:info@orbs.com"><i class="fa-regular fa-envelope"></i> info@orbs.com</a></li><li><a href="tel:+1234567890"><i class="fa-solid fa-phone"></i> +123 456 7890</a></li><li><a href="#"><i class="fa-solid fa-location-dot"></i> Orchard Valley, USA</a></li></ul>
+        </div>
+      </div>
+      <div class="copyright">© 2025 ORBS. All rights reserved. Static front-end design only.</div>
+    </div>
+  </footer>
+  <button class="back-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+  <div class="toast">Done</div>
+<script src="js/main.js"></script>
+</body>
+</html>

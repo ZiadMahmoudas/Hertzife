@@ -1,0 +1,6 @@
+<svg width="160" height="70" viewBox="0 0 160 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M45 31C45 47.5 34.2 60 22.7 60C11.1 60 3 47.7 3 35.2C3 22.2 12.7 13.7 25.5 18.3C31.3 12.9 42.5 17.8 45 31Z" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M23 18C24.7 9.7 31.1 4.5 42 4" stroke="white" stroke-width="4" stroke-linecap="round"/>
+  <path d="M39 5C41.7 11.8 36.7 17.1 29.5 16.2C31 9.8 34.4 6.1 39 5Z" fill="white"/>
+  <text x="52" y="49" font-family="Georgia, serif" font-size="42" fill="white" letter-spacing="-3">RBS</text>
+</svg>

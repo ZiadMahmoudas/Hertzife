@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ORBS - Products</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="top-alert"><i class="fa-solid fa-truck-fast"></i> Free delivery on orders over $59 — Freshness guaranteed.</div>
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="logo"><img src="assets/icons/logo-orbs.svg" alt="ORBS Logo"></a>
+      <nav class="nav-links"><a href="index.html" class="">Home</a><a href="products.html" class="active">Product</a><a href="blogs.html" class="">Blogs</a><a href="contact.html" class="">Contact us</a></nav>
+      <div class="nav-actions">
+        <button class="icon-btn search-toggle" type="button" aria-label="Open Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="icon-btn cart-toggle" type="button" aria-label="Open Cart"><i class="fa-solid fa-bag-shopping"></i><span class="cart-count">0</span></button>
+        <a href="login.html" class="btn btn-outline">Log-in</a>
+        <a href="signup.html" class="btn btn-light">Sign-up</a>
+      </div>
+      <button class="menu-toggle" aria-label="Open Menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+
+    <div class="search-panel" aria-hidden="true">
+      <div class="container search-panel-inner">
+        <div class="search-shell">
+          <div class="search-bar-row">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input class="search-global-input" type="search" placeholder="Search products, articles and pages...">
+            <button class="search-close" type="button" aria-label="Close Search"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <div class="search-hints">
+            <button class="search-chip" type="button" data-query="Red Apples">Red Apples</button>
+            <button class="search-chip" type="button" data-query="Green Apples">Green Apples</button>
+            <button class="search-chip" type="button" data-query="Gift Box">Gift Box</button>
+            <button class="search-chip" type="button" data-query="Recipes">Recipes</button>
+            <button class="search-chip" type="button" data-query="Delivery">Delivery</button>
+          </div>
+          <div class="search-results"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cart-panel" aria-hidden="true">
+      <div class="container cart-panel-inner">
+        <div class="mini-cart-shell">
+          <div class="mini-cart-head">
+            <div>
+              <span class="search-meta">Shopping Cart</span>
+              <h3>Your fresh picks</h3>
+            </div>
+            <button class="cart-close" type="button" aria-label="Close Cart"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <div class="mini-cart-list">
+            <div class="mini-cart-item">
+              <img src="assets/images/apple-red-delicious.jpg" alt="Red Delicious">
+              <div>
+                <h4>Red Delicious</h4>
+                <p>1 kg × $2.50</p>
+              </div>
+              <strong>$2.50</strong>
+            </div>
+            <div class="mini-cart-item">
+              <img src="assets/images/apple-fuji.jpg" alt="Fuji Apple">
+              <div>
+                <h4>Fuji Apple</h4>
+                <p>1 kg × $2.80</p>
+              </div>
+              <strong>$2.80</strong>
+            </div>
+          </div>
+          <div class="mini-cart-total">
+            <span>Subtotal</span>
+            <strong>$5.30</strong>
+          </div>
+          <div class="mini-cart-actions">
+            <a class="btn btn-soft" href="cart.html">View Cart</a>
+            <a class="btn btn-primary" href="cart.html">Checkout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+<main class="page-body">
+
+  <section class="page-hero"><div class="container"><div class="breadcrumbs"><a href="index.html">Home</a><span>/</span><span>Product</span></div><h1>Our Fresh Apple Collection</h1><p>Handpicked with care, sorted by quality and delivered with love.</p></div></section>
+  <section class="section"><div class="container">
+    <div class="toolbar">
+      <div class="filter-tags product-filter">
+        <button class="tag active" type="button" data-filter="all">All Apples</button>
+        <button class="tag" type="button" data-filter="red">Red Apples</button>
+        <button class="tag" type="button" data-filter="green">Green Apples</button>
+        <button class="tag" type="button" data-filter="gift">Gift Boxes</button>
+      </div>
+      <div class="toolbar-actions">
+        <input class="search-input product-search" type="search" placeholder="Search products...">
+        <select class="select product-sort">
+          <option value="popular">Sort by: Popular</option>
+          <option value="price-low">Price: Low to High</option>
+          <option value="price-high">Price: High to Low</option>
+          <option value="newest">Newest</option>
+        </select>
+      </div>
+    </div>
+    <div class="products-grid big">
+          <article class="product-card" data-category="red" data-price="2.50" data-order="1" data-date="20250608">
+            <span class="product-badge ">Best Seller</span>
+            <a href="product-details.html" class="product-img"><img src="assets/images/apple-red-delicious.jpg" alt="Red Delicious"></a>
+            <h3><a href="product-details.html">Red Delicious</a></h3>
+            <p class="desc">Crisp, sweet and perfectly juicy.</p>
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+            <div class="price-row"><div class="price">$2.50 <small>/ kg</small></div><button class="add-cart" aria-label="Add to cart"><i class="fa-solid fa-cart-plus"></i></button></div>
+          </article>
+
+          <article class="product-card" data-category="red" data-price="2.80" data-order="2" data-date="20250607">
+            <span class="product-badge ">New</span>
+            <a href="product-details.html" class="product-img"><img src="assets/images/apple-fuji.jpg" alt="Fuji Apple"></a>
+            <h3><a href="product-details.html">Fuji Apple</a></h3>
+            <p class="desc">Sweet, crunchy and full of flavor.</p>
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+            <div class="price-row"><div class="price">$2.80 <small>/ kg</small></div><button class="add-cart" aria-label="Add to cart"><i class="fa-solid fa-cart-plus"></i></button></div>
+          </article>
+
+          <article class="product-card" data-category="green" data-price="2.60" data-order="3" data-date="20250603">
+            
+            <a href="product-details.html" class="product-img"><img src="assets/images/apple-granny.jpg" alt="Granny Smith"></a>
+            <h3><a href="product-details.html">Granny Smith</a></h3>
+            <p class="desc">Tangy, refreshing and bright green.</p>
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+            <div class="price-row"><div class="price">$2.60 <small>/ kg</small></div><button class="add-cart" aria-label="Add to cart"><i class="fa-solid fa-cart-plus"></i></button></div>
+          </article>
+
+          <article class="product-card" data-category="red" data-price="2.40" data-order="4" data-date="20250602">
+            
+            <a href="product-details.html" class="product-img"><img src="assets/images/apple-gala.jpg" alt="Gala Apple"></a>
+            <h3><a href="product-details.html">Gala Apple</a></h3>
+            <p class="desc">Mild, sweet and aromatic.</p>
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+            <div class="price-row"><div class="price">$2.40 <small>/ kg</small></div><button class="add-cart" aria-label="Add to cart"><i class="fa-solid fa-cart-plus"></i></button></div>
+          </article>
+
+          <article class="product-card" data-category="red" data-price="3.20" data-order="5" data-date="20250601">
+            <span class="product-badge gold">Premium</span>
+            <a href="product-details.html" class="product-img"><img src="assets/images/apple-honeycrisp.jpg" alt="Honeycrisp"></a>
+            <h3><a href="product-details.html">Honeycrisp</a></h3>
+            <p class="desc">Juicy, crisp and honey-sweet.</p>
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+            <div class="price-row"><div class="price">$3.20 <small>/ kg</small></div><button class="add-cart" aria-label="Add to cart"><i class="fa-solid fa-cart-plus"></i></button></div>
+          </article>
+
+          <article class="product-card" data-category="red" data-price="3.10" data-order="6" data-date="20250530">
+            
+            <a href="product-details.html" class="product-img"><img src="assets/images/apple-pinklady.jpg" alt="Pink Lady"></a>
+            <h3><a href="product-details.html">Pink Lady</a></h3>
+            <p class="desc">Bright, balanced and naturally sweet.</p>
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+            <div class="price-row"><div class="price">$3.10 <small>/ kg</small></div><button class="add-cart" aria-label="Add to cart"><i class="fa-solid fa-cart-plus"></i></button></div>
+          </article>
+
+          <article class="product-card" data-category="red" data-price="2.70" data-order="7" data-date="20250525">
+            
+            <a href="product-details.html" class="product-img"><img src="assets/images/apple-jonagold.jpg" alt="Jonagold"></a>
+            <h3><a href="product-details.html">Jonagold</a></h3>
+            <p class="desc">Golden-red apples with rich taste.</p>
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+            <div class="price-row"><div class="price">$2.70 <small>/ kg</small></div><button class="add-cart" aria-label="Add to cart"><i class="fa-solid fa-cart-plus"></i></button></div>
+          </article>
+
+          <article class="product-card" data-category="red" data-price="2.50" data-order="8" data-date="20250520">
+            
+            <a href="product-details.html" class="product-img"><img src="assets/images/apple-braeburn.jpg" alt="Braeburn"></a>
+            <h3><a href="product-details.html">Braeburn</a></h3>
+            <p class="desc">Firm, aromatic and refreshing.</p>
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+            <div class="price-row"><div class="price">$2.50 <small>/ kg</small></div><button class="add-cart" aria-label="Add to cart"><i class="fa-solid fa-cart-plus"></i></button></div>
+          </article>
+
+          <article class="product-card" data-category="green" data-price="3.30" data-order="9" data-date="20250518">
+            <span class="product-badge gold">Limited</span>
+            <a href="product-details.html" class="product-img"><img src="assets/images/apple-golden.jpg" alt="Golden Delicious"></a>
+            <h3><a href="product-details.html">Golden Delicious</a></h3>
+            <p class="desc">Soft, fragrant and beautifully golden.</p>
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+            <div class="price-row"><div class="price">$3.30 <small>/ kg</small></div><button class="add-cart" aria-label="Add to cart"><i class="fa-solid fa-cart-plus"></i></button></div>
+          </article>
+
+          <article class="product-card" data-category="gift,red,green" data-price="24.99" data-order="10" data-date="20250610">
+            <span class="product-badge gold">Gift Box</span>
+            <a href="product-details.html" class="product-img"><img src="assets/images/orchard-crate.jpg" alt="Apple Gift Box"></a>
+            <h3><a href="product-details.html">Apple Gift Box</a></h3>
+            <p class="desc">A premium mixed box packed beautifully for gifting.</p>
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+            <div class="price-row"><div class="price">$24.99 <small>/ box</small></div><button class="add-cart" aria-label="Add to cart"><i class="fa-solid fa-cart-plus"></i></button></div>
+          </article>
+    </div>
+  </div></section>
+  <section class="section-sm"><div class="container newsletter-box"><div class="content"><h2>Stay Fresh. Stay Updated.</h2><p>Subscribe for exclusive offers, new arrivals and fresh harvest news.</p><form class="newsletter-form"><input type="email" placeholder="Enter your email" required><button>Subscribe</button></form></div></div></section>
+
+</main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <img class="footer-logo" src="assets/icons/logo-orbs.svg" alt="ORBS Logo">
+          <p>Bringing nature’s best to your doorstep with premium apples, fresh fruits and quality you can trust every day.</p>
+          <div class="social-links">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <ul><li><a href="index.html">Home</a></li><li><a href="products.html">Product</a></li><li><a href="blogs.html">Blogs</a></li><li><a href="contact.html">Contact us</a></li></ul>
+        </div>
+        <div>
+          <h3>Customer Service</h3>
+          <ul><li><a href="#">FAQs</a></li><li><a href="#">Shipping & Delivery</a></li><li><a href="#">Returns</a></li><li><a href="#">Privacy Policy</a></li></ul>
+        </div>
+        <div>
+          <h3>Contact Us</h3>
+          <ul><li><a href="mailto:info@orbs.com"><i class="fa-regular fa-envelope"></i> info@orbs.com</a></li><li><a href="tel:+1234567890"><i class="fa-solid fa-phone"></i> +123 456 7890</a></li><li><a href="#"><i class="fa-solid fa-location-dot"></i> Orchard Valley, USA</a></li></ul>
+        </div>
+      </div>
+      <div class="copyright">© 2025 ORBS. All rights reserved. Static front-end design only.</div>
+    </div>
+  </footer>
+  <button class="back-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+  <div class="toast">Done</div>
+<script src="js/main.js"></script>
+</body>
+</html>

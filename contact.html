@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ORBS - Contact</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="top-alert"><i class="fa-solid fa-truck-fast"></i> Free delivery on orders over $59 — Freshness guaranteed.</div>
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="logo"><img src="assets/icons/logo-orbs.svg" alt="ORBS Logo"></a>
+      <nav class="nav-links"><a href="index.html" class="">Home</a><a href="products.html" class="">Product</a><a href="blogs.html" class="">Blogs</a><a href="contact.html" class="active">Contact us</a></nav>
+      <div class="nav-actions">
+        <button class="icon-btn search-toggle" type="button" aria-label="Open Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="icon-btn cart-toggle" type="button" aria-label="Open Cart"><i class="fa-solid fa-bag-shopping"></i><span class="cart-count">0</span></button>
+        <a href="login.html" class="btn btn-outline">Log-in</a>
+        <a href="signup.html" class="btn btn-light">Sign-up</a>
+      </div>
+      <button class="menu-toggle" aria-label="Open Menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+
+    <div class="search-panel" aria-hidden="true">
+      <div class="container search-panel-inner">
+        <div class="search-shell">
+          <div class="search-bar-row">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input class="search-global-input" type="search" placeholder="Search products, articles and pages...">
+            <button class="search-close" type="button" aria-label="Close Search"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <div class="search-hints">
+            <button class="search-chip" type="button" data-query="Red Apples">Red Apples</button>
+            <button class="search-chip" type="button" data-query="Green Apples">Green Apples</button>
+            <button class="search-chip" type="button" data-query="Gift Box">Gift Box</button>
+            <button class="search-chip" type="button" data-query="Recipes">Recipes</button>
+            <button class="search-chip" type="button" data-query="Delivery">Delivery</button>
+          </div>
+          <div class="search-results"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cart-panel" aria-hidden="true">
+      <div class="container cart-panel-inner">
+        <div class="mini-cart-shell">
+          <div class="mini-cart-head">
+            <div>
+              <span class="search-meta">Shopping Cart</span>
+              <h3>Your fresh picks</h3>
+            </div>
+            <button class="cart-close" type="button" aria-label="Close Cart"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <div class="mini-cart-list">
+            <div class="mini-cart-item">
+              <img src="assets/images/apple-red-delicious.jpg" alt="Red Delicious">
+              <div>
+                <h4>Red Delicious</h4>
+                <p>1 kg × $2.50</p>
+              </div>
+              <strong>$2.50</strong>
+            </div>
+            <div class="mini-cart-item">
+              <img src="assets/images/apple-fuji.jpg" alt="Fuji Apple">
+              <div>
+                <h4>Fuji Apple</h4>
+                <p>1 kg × $2.80</p>
+              </div>
+              <strong>$2.80</strong>
+            </div>
+          </div>
+          <div class="mini-cart-total">
+            <span>Subtotal</span>
+            <strong>$5.30</strong>
+          </div>
+          <div class="mini-cart-actions">
+            <a class="btn btn-soft" href="cart.html">View Cart</a>
+            <a class="btn btn-primary" href="cart.html">Checkout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+<main class="page-body">
+
+  <section class="page-hero contact"><div class="container"><div class="breadcrumbs"><a href="index.html">Home</a><span>/</span><span>Contact</span></div><h1>Contact Us</h1><p>Have a question about products, delivery or orders? We’re here to help.</p></div></section>
+  <section class="section"><div class="container contact-grid">
+    <div class="info-stack">
+      <div class="info-card"><i class="fa-regular fa-envelope"></i><div><h3>Email Us</h3><p>info@orbs.com<br>support@orbs.com</p></div></div>
+      <div class="info-card"><i class="fa-solid fa-phone"></i><div><h3>Call Us</h3><p>+123 456 7890<br>Mon - Fri, 9 AM - 6 PM</p></div></div>
+      <div class="info-card"><i class="fa-solid fa-location-dot"></i><div><h3>Visit Our Orchard</h3><p>123 Orchard Lane<br>Fresh Valley, USA</p></div></div>
+      <div class="map-box"><div><i class="fa-solid fa-map-location-dot"></i><br>Orchard Valley Location</div></div>
+    </div>
+    <form class="form-card contact-form">
+      <span class="kicker"><i class="fa-solid fa-message"></i> Send a Message</span><h2 style="font-size:34px;margin-bottom:18px">Let’s Talk</h2>
+      <div class="form-grid">
+        <div class="field"><label>Full Name</label><input type="text" placeholder="Your name" required></div>
+        <div class="field"><label>Email</label><input type="email" placeholder="Your email" required></div>
+        <div class="field"><label>Phone</label><input type="tel" placeholder="Phone number"></div>
+        <div class="field"><label>Subject</label><select><option>Product Inquiry</option><option>Shipping</option><option>Returns</option></select></div>
+        <div class="field full"><label>Message</label><textarea placeholder="Write your message..." required></textarea></div>
+      </div>
+      <button class="btn btn-primary" style="margin-top:18px">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+    </form>
+  </div></section>
+
+</main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <img class="footer-logo" src="assets/icons/logo-orbs.svg" alt="ORBS Logo">
+          <p>Bringing nature’s best to your doorstep with premium apples, fresh fruits and quality you can trust every day.</p>
+          <div class="social-links">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <ul><li><a href="index.html">Home</a></li><li><a href="products.html">Product</a></li><li><a href="blogs.html">Blogs</a></li><li><a href="contact.html">Contact us</a></li></ul>
+        </div>
+        <div>
+          <h3>Customer Service</h3>
+          <ul><li><a href="#">FAQs</a></li><li><a href="#">Shipping & Delivery</a></li><li><a href="#">Returns</a></li><li><a href="#">Privacy Policy</a></li></ul>
+        </div>
+        <div>
+          <h3>Contact Us</h3>
+          <ul><li><a href="mailto:info@orbs.com"><i class="fa-regular fa-envelope"></i> info@orbs.com</a></li><li><a href="tel:+1234567890"><i class="fa-solid fa-phone"></i> +123 456 7890</a></li><li><a href="#"><i class="fa-solid fa-location-dot"></i> Orchard Valley, USA</a></li></ul>
+        </div>
+      </div>
+      <div class="copyright">© 2025 ORBS. All rights reserved. Static front-end design only.</div>
+    </div>
+  </footer>
+  <button class="back-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+  <div class="toast">Done</div>
+<script src="js/main.js"></script>
+</body>
+</html>
